@@ -1,0 +1,150 @@
+.cardpay {
+  border: none;
+}
+
+
+
+.form-control {
+  border-bottom: 2px solid #eee !important;
+  border: none;
+  font-weight: 600;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #8bbafe;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid blue !important;
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.inputbox span {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  transition: 0.5s;
+}
+
+.inputbox i {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  transition: 0.5s;
+  color: #3f51b5;
+}
+
+
+.inputbox input:focus ~ span {
+  transform: translateX(-0px) translateY(-15px);
+  font-size: 12px;
+}
+
+.inputbox input:valid ~ span {
+  transform: translateX(-0px) translateY(-15px);
+  font-size: 12px;
+}
+
+.card-blue {
+  background-color: #492bc4;
+}
+
+.hightlight {
+  background-color: #5737d9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.yellow {
+  color: #fdcc49;
+}
+
+.decoration {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #492bc4;
+  border-color: #492bc4;
+  text-align: center;
+  padding: 8px;
+  width: 40%;
+  height: 40px;
+}
+.btn-warning{
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #c5a506;
+  text-align: center;
+  padding: 8px;
+  width: 40%;
+  height: 40px;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: #6349ca;
+  border-color: #492bc4;
+  text-align: center;
+  padding: 8px;
+  width: 40%;
+  height: 40px;
+}
+
+.decoration:hover {
+  text-decoration: none;
+  color: #fdcc49;
+}
+
+.form_input{
+  background-color: black;
+  opacity: 0;
+}
+
+.pay-btn{
+  width: 80px;
+}
+
+@media screen and (max-width:500px) {
+
+    .btn-success {
+        color: #fff;
+        background-color: #492bc4;
+        border-color: #492bc4;
+        text-align: center;
+        padding: 8px;
+        width: 40%;
+        height: 40px;
+      }
+      .btn-warning{
+        color: #fff;
+        background-color: #ffc107;
+        border-color: #c5a506;
+        text-align: center;
+        padding: 8px;
+        width: 30%;
+        height: 40px;
+        margin-left: 5px;
+      }
+      .btn-success:hover {
+        color: #fff;
+        background-color: #6349ca;
+        border-color: #492bc4;
+        text-align: center;
+        padding: 8px;
+        width: 40%;
+        height: 40px;
+      }
+      
+    
+}

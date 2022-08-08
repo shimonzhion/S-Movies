@@ -1,0 +1,54 @@
+#Title_Food {
+  font-size: 70px;
+  z-index: 10;
+  position: absolute;
+  margin-top: -150px;
+  color: antiquewhite;
+  right: 1rem;
+  text-shadow: 2px 2px 2px black;
+}
+
+#Title_Food img {
+  width: 140px;
+}
+
+.title_food {
+  text-align: center;
+  margin-bottom: 40px;
+  color: antiquewhite;
+}
+.text_food {
+  margin: auto 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: antiquewhite;
+}
+.btn-payment {
+  height: 38px;
+  width: 90px;
+}
+.btn-add {
+  height: 38px;
+  width: 60px;
+}
+.btn_p {
+  width: 90px;
+  height: 35px;
+}
+
+@media screen and (max-width: 750px) {
+  #Title_Food {
+    font-size: 35px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -60px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px black;
+  }
+  #Title_Food img {
+    width: 55px;
+  }
+}
+.my_div {
+  margin-bottom: 100px;
+}

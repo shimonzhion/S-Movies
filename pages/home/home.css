@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap'); 
+ main{
+    width: 100vw;
+    
+  
+}
+#div_container{
+    width: 100vw;
+    min-height: 80vh;
+    background: black;
+  
+} 
+
+#div_home{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+    width: 100;
+    height: 100%;
+    background: black;
+    min-height: 80vh;
+
+}
+#div_video{
+    width: 100vw;
+}
+
+h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 50px;
+
+}
+

@@ -1,0 +1,39 @@
+.checked {
+    color: orange;
+  }
+  .review_card{
+    width: 300px;
+    margin-top: 30px;
+  }
+
+#container_review_card .btn{
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  padding: 8px;
+width: 40%;
+height: 40px;
+}
+
+
+#container_review_card{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px ;
+  margin-right: 50px;
+  
+ 
+}
+
+/* #about_page{
+  background-image: url(/images/cola.jpg); 
+  
+} */
+
+
+#about_page{
+  min-height: 80vh;
+}
+
+
