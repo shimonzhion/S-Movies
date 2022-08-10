@@ -30,11 +30,13 @@ function showMovie(data) {
     </div>
   </div>
     `;
+   
   });
 }
 
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+
 
 form.addEventListener("submit", (e) => {
   div_container_movie.innerHTML = "";
@@ -47,6 +49,8 @@ form.addEventListener("submit", (e) => {
     getmovies(API_URL);
   }
 });
+
+
 
 function getColor(vote) {
   if (vote >= 8) {
@@ -68,7 +72,7 @@ console.log(day + "/" + month + "/" + years);
 async function review_Purchast_Movie(id, text) {
   switch (id) {
     case "no":
-      confirm("gello");
+      confirm("enter text");
       break;
 
     default:
@@ -165,7 +169,7 @@ async function review_Purchast_Movie(id, text) {
       <span class="mb-4">vvv</span>
       <button type="submit" class="btn_Purchast btn btn-primary " onclick="Payment_Form(${id},'${
         document.getElementById(id).textContent
-      }') ">Submit</button>
+      }') ">order tickets</button>
     </form>
       </div>`;
 

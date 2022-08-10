@@ -26,8 +26,20 @@
 }
 
 #form_id input{
-    border: 1px solid red;
-    width: 100%;
+  border-radius: 5px;
+    width: 70%;
     margin-bottom: 20px;
+    text-align: center;
 
+}
+#form_id button{
+width: 20%;
+}
+
+#form_id{
+    margin-top: 40px;
+}
+#img_con{
+
+    max-width: 100%;
 }

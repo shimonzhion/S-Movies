@@ -35,6 +35,27 @@
   width: 90px;
   height: 35px;
 }
+.div__food{
+  background: url(/images/pexels-photo-2983101.jpeg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  /* background-size:90%; */
+  background-size: 48cm;
+}
+.my_div {
+  margin-bottom: 100px;
+}
+.div__food2{
+  background: url(/images/ccccooola.jpeg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  background-size:90%;
+  background-size: 50cm;
+
+
+}
 
 @media screen and (max-width: 750px) {
   #Title_Food {
@@ -48,7 +69,24 @@
   #Title_Food img {
     width: 55px;
   }
+
+  .div__food {
+    background: black;
+  }
+
+.div__food2{
+background: black;
+} 
+
 }
-.my_div {
-  margin-bottom: 100px;
-}
+
+
+
+
+
+
+
+
+/* .div__food2{
+m
+} */

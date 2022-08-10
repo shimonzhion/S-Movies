@@ -113,6 +113,17 @@
 
 .pay-btn{
   width: 80px;
+  
+}
+#btn_form{
+  margin-top: 100px;
+  width:80px;
+  height: 40px;
+}
+
+#btn_form1{
+  width:80px;
+  height: 40px;
 }
 
 @media screen and (max-width:500px) {

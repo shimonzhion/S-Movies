@@ -72,16 +72,17 @@ async function Food_D(price, text,movieN,date) {
                 document.querySelector(
                   "#div-cola-po"
                 ).innerHTML += `<div class="card mx-auto mb-5 text-center" style="width: 18rem;">
-    <img src="images/${foodImg[i]}" class="card-img-top h-75" alt="...">
+    <img src="images/${foodImg[i]}" class="card-img-top " alt="..." style="height: 360px;>
     <div class="card-body">
       <h5 class="card-title">${foodtitle[i]}</h5>
       <div class="d-flex" >
       <input id="" type="text" class="input_num_card form-control text-center mb-2 w-50 " value="$${foodprice[i]}" disabled  onkeydown="return false"  >
       <input id="screen_p" type="text" class="input_num_card1 form-control text-center mb-2 w-50 " value="${price}" disabled  onkeydown="return false"  >
       </div>
-      <a href="#" class="btn-add btn btn-primary" onclick="Payment_Form2('add',${foodprice[i]})">add</a>
-      <a href="#" class="btn-payment  btn btn-primary" onclick="Payment_Form2('x',7,${movieN},${data})">payment</a>
-
+      <div class="d-flex w-100">
+      <a href="#" class="btn-add btn btn-primary ms-2" onclick="Payment_Form2('add',${foodprice[i]})">add</a>
+      <a href="#" class="btn-payment  btn btn-primary ms-1" onclick="Payment_Form2('x',7,${movieN},${data})">payment</a>
+    </div>
     </div>
   </div>`;
                 i++;
@@ -112,27 +113,27 @@ async function Food_D(price, text,movieN,date) {
               ) {
                 document.querySelector(
                   "#div-burgers"
-                ).innerHTML += `<div class="card mx-auto mb-5 " style="width: 18rem;">
+                ).innerHTML += `<div class="card mx-auto mb-5  bg-black bg-opacity-50" style="width: 19rem;">
   <img src="${obj.img}" class="card-img-top" alt="...">
-  <div class="card-body text-center">
-    <h5 class="card-title">${obj.name}</h5>
+  <div class="card-body text-center  ">
+    <h5 class="card-title text-white">${obj.name}</h5>
     <div id="www">
     <input id="screen_p" type="text" class="input_num_card form-control text-center mb-2 w-50 " value="$7" disabled  onkeydown="return false"  >
     </div>
-    <a href="#" class="btn_p btn btn-primary"  onclick="Payment_Form('food','${obj.name}','7')">Purchast1</a>
+    <a href="#" class="btn_p btn btn-primary"  onclick="Payment_Form('food','${obj.name}','7')">Purchast</a>
   </div>
 </div>`;
 
                 document.querySelector(
                   "#div-cola-po"
-                ).innerHTML += `<div class="card mx-auto mb-5 text-center" style="width: 18rem;">
-  <img src="images/${foodImg[i]}" class="card-img-top h-75" alt="...">
+                ).innerHTML += `<div class="card mx-auto  bg-black bg-opacity-50  text-center mb-5" style="width: 19rem; ">
+  <img src="images/${foodImg[i]}" class="card-img-top " alt="..." style="height: 360px;">
   <div class="card-body">
-    <h5 class="card-title">${foodtitle[i]}</h5>
+    <h5 class="card-title text-white">${foodtitle[i]}</h5>
     <div id="www">
     <input id="screen_p" type="text" class="input_num_card form-control text-center mb-2 w-50 " value="$${foodprice[i]}" disabled  onkeydown="return false"  >
     </div>
-    <a href="#" class="btn_p btn btn-primary" onclick="Payment_Form('food','${foodtitle[i]}','${foodprice[i]}')">Purchast2</a>
+    <a href="#" class="btn_p btn btn-primary" onclick="Payment_Form('food','${foodtitle[i]}','${foodprice[i]}')">Purchast</a>
   </div>
 </div>`;
                 i++;

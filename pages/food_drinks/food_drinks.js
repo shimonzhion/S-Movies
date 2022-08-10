@@ -32,20 +32,30 @@ function Food_DrinksPage(price, text, movieN, date) {
     <img src="images/7d82d1423a6761844c297017347967fc-removebg-preview.png "class= " ">
     </div>
   </div>
-  <div  class="row bg-black  pt-5 pb-5">
+
+
+  <div  class="div__food row  pb-5">
   <div  class="text-center">
-  <hr class="text-white">
-  <h1 class="mt-5 mb-5 text-warning">Burgers</h1>
+  
+  <h1 class=" mt-5 text-warning">Burgers</h1>
   </div>
+
   <div id="div-burgers"  class=" d-flex align-content-start flex-wrap mt-5">
   </div>
+
   </div>
-  <div  class="row w-100 text-center bg-black mt-5">
-  <h1 class="text-warning bg-black">Cola & Popcorn</h1>
+  <div class="div__food2 ">
+  <div  class="row  text-center ">
+  <hr class="text-black">
+  <h1 class="text-white mt-5">Cola & Popcorn</h1>
   </div>
-  <div id="div-cola-po"  class=" d-flex align-content-start flex-wrap bg-black w-100 mt-5">
+  <div id="div-cola-po"  class=" d-flex align-content-start flex-wrap  w-100 mt-5">
   </div>
   </div>
+  </div>
+
+
+  
   </div>
     `;
 }

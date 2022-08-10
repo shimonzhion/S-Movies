@@ -138,7 +138,7 @@ function Payment_Form(id,movieN,money) {
   <div class="mt-4 mb-4 d-flex justify-content-between">
   <span>Previous step</span>
   
-  <button class="btn btn-success px-3" onclick="eeee('$${money}','${movieN}','food')">
+  <button id="ppay" class="btn btn-success px-3" onclick="eeee('$${money}','${movieN}','food')">
   Pay $${money}
   </button>
   <button class= "btn btn-warning px-3" onclick="Food_DrinksPage()">
@@ -161,7 +161,7 @@ function Payment_Form(id,movieN,money) {
   console.log(movieN);
 
   if (price != 0 && cards != ""){
-    let ask = confirm("you want food")
+    let ask = confirm("would you like to order food? ")
     if(ask == true){
       console.log(movieN);
   return Food_DrinksPage(price,'input',movieN,date);
@@ -305,7 +305,7 @@ function Payment_Form(id,movieN,money) {
         <div class="mt-4 mb-4 d-flex justify-content-between">
           <span>Previous step</span>
   
-          <button class="btn btn-success px-3" onclick="eeee('${price}','${movieN}','${date}')">
+          <button id="ppay" class="btn btn-success px-3" onclick="eeee('${price}','${movieN}','${date}')">
           Pay ${price}
           </button>
           <button class= "btn btn-warning px-3" onclick="review_Purchast_Movie('back',${id})">
@@ -469,7 +469,7 @@ benefits.</span
 <div class="mt-4 mb-4 d-flex justify-content-between">
 <span>Previous step</span>
 
-<button class="btn btn-success px-3" onclick="eeee('${document.getElementById("screen_p").value}','${movieN}','${date}')">
+<button id="ppay" class="btn btn-success px-3" onclick="eeee('${document.getElementById("screen_p").value}','${movieN}','${date}')">
 Pay ${document.getElementById("screen_p").value}
 </button>
 <button class= "btn btn-warning px-3" onclick="review_Purchast_Movie('ss','ss')">
@@ -488,13 +488,13 @@ function eeee (price,movieN,date){
 if(date=='food'){
 
   document.querySelector('#div_container').innerHTML=
-  `<div id="div_form2">
+  `<div id="div_form2" class="d-flex justify-content-center align-items-center w-100 h-100">
     <form id="form_i2" action="https://formsubmit.co/${document.querySelector('#email').value}" class="d-flex flex-column" method="POST" class="text-white">
   
     <input  id="first_name" class="form_input bg-black" type="text" name="FoodDrinks" value="${movieN}">
     <input  id="first_name" class="form_input bg-black" type="text" name="price" value="${price}">
     <br>
-   <button id="btn_form" class="btn  btn-primary"; type="submit">submit</button>
+   <button id="btn_form" class="btn  btn-primary"; type="submit">confirm</button>
   </form>
   </div>`
 
@@ -509,7 +509,7 @@ if(date=='food'){
 
   document.querySelector('#div_container').innerHTML=
 
-`<div id="div_form2">
+`<div id="div_form2" class="d-flex justify-content-center align-items-center w-100 h-100">
   <form id="form_i2" action="https://formsubmit.co/${document.querySelector('#email').value}" class="d-flex flex-column" method="POST" class="text-white">
 
   <input  id="first_name" class="form_input bg-black" type="text" name="Movies" value="${movieN}">
@@ -519,7 +519,7 @@ if(date=='food'){
   <input  id="first_name" class="form_input bg-black" type="text" name="name" value="${document.querySelector('#input_name').value}">
 
   <br>
- <button id="btn_form" class="btn  btn-primary"; type="submit">submit</button>
+ <button id="btn_form1" class="btn  btn-primary"; type="submit">confirm</button>
 </form>
 </div>`
 }
