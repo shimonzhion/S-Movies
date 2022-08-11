@@ -36,7 +36,7 @@
   height: 35px;
 }
 .div__food{
-  background: url(./images/pexels-photo-2983101.jpeg);
+  background: url(../../images/pexels-photo-2983101.jpeg) !important;
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center;
@@ -47,7 +47,7 @@
   margin-bottom: 100px;
 }
 .div__food2{
-  background: url(./images/ccccooola.jpeg);
+  background: url(../../images/ccccooola.jpeg) !important;
   background-repeat: no-repeat;
   /* background-size: cover; */
   background-position: center;
